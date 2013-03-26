@@ -12,10 +12,9 @@ ignoring case
 		
 		-- Run the script and get the result:
 		
-		set postWeather to "grep -o '[^\"]*goo[^\"]*'"
+		set postWeather to "grep -o '[^\"]*goo.gl[^\"]*'"
 		set forecast to do shell script curlCMD & " | " & postWeather
 		
 		return forecast
 	end if
 end ignoring
-
