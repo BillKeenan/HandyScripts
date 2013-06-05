@@ -1,4 +1,5 @@
 --pull a random line from a file
+--- create a new text expander item, set to applescript and paste this in.
 
 property fileToRead = "[FULL FILE PATH]" 
 set the_text to read fileToRead
