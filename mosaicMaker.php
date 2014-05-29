@@ -20,7 +20,7 @@ function makeMosaic($directory,$totalHeight,$totalWidth,$height,$maximages,&$bg)
 		//get file type
 		$pathinfo = pathinfo($entryName);
 
-        if (array_search($pathinfo['extension'],$allowed)){
+        if (array_search($pathinfo['extension'],$allowed) !==false){
 
             if (strrpos($entryName,'..') > -1){
                 //that shouldnt be there
